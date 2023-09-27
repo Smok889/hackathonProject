@@ -1,3 +1,4 @@
+//react imports
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -8,6 +9,7 @@ import { AiFillPushpin } from "react-icons/ai";
 function App() {
   return (
     <>
+      //layout
       <h1>ProjeX</h1>
       <div class="topnav">
         <a class="active" href="#home">
@@ -35,6 +37,105 @@ function App() {
           <AiFillPushpin />
           Pinned projects
         </label>
+      </div>
+      &nbsp;
+      <div className="pin">
+        <section class="articles">
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="img1.jpg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Smart Home Automation System</h2>
+                <p>
+                  Create a system that allows homeowners to control and monitor
+                  various aspects of their home, such as lighting, temperature,
+                  security, and appliances, through a centralized mobile app.
+                </p>
+                <a href="#" class="read-more">
+                  Read more{" "}
+                  <span class="sr-only">about this is some title</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="img2.jpg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Virtual Reality Art Gallery</h2>
+                <p>
+                  Develop a virtual reality platform that enables artists to
+                  showcase their work in immersive 3D galleries, providing
+                  viewers with a unique and interactive art experience.
+                </p>
+                <a href="#" class="read-more">
+                  Read more{" "}
+                  <span class="sr-only">about this is some title</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="article-wrapper">
+              <figure>
+                <img src="img3.jpg" alt="" />
+              </figure>
+              <div class="article-body">
+                <h2>Project 3</h2>
+                <p>
+                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
+                  euismod sed lacus sit amet, congue bibendum eros. Etiam mattis
+                  lobortis porta. Vestibulum ultrices iaculis enim imperdiet
+                  egestas.
+                </p>
+                <a href="#" class="read-more">
+                  Read more{" "}
+                  <span class="sr-only">about this is some title</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
     </>
   );
