@@ -1,5 +1,6 @@
 //react imports
 import { useState } from "react";
+import { useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -9,6 +10,7 @@ import { AiFillPushpin } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
 import Topview from "./topview";
 function App() {
+  
   return (
     <>
       <h1>ProjeX</h1>
@@ -145,10 +147,14 @@ function App() {
             </div>
           </article>
         </section>
+<<<<<<< HEAD
       </div>
       <buttton className="button">Login</buttton>
       <br />
       <button className="button">Register</button>
+=======
+      </div> 
+>>>>>>> 092e292b7864f809dff74e26701095c8db45c674
     </>
   );
 }
