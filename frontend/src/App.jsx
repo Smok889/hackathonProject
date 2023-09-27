@@ -1,5 +1,6 @@
 //react imports
 import { useState } from "react";
+import { useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -7,8 +8,30 @@ import { FaFireAlt } from "react-icons/fa";
 import { FcLike } from "react-icons/fc";
 import { AiFillPushpin } from "react-icons/ai";
 function App() {
+
+  const [backendData, setBackendData] = useState([{}])
+
+  useEffect(() => {
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => {
+        setBackendData(data)
+      }
+    )
+  }, [])
+  
   return (
     <>
+    <div>
+      {(typeof backendData.users === 'undefined')? (
+        <p>Loading...</p>
+      ): (
+        backendData.users.map((user,i) => (
+          <p key={i}>{user} </p>
+        ))
+      )}
+    </div>
       //layout
       <h1>ProjeX</h1>
       <div class="topnav">
@@ -136,7 +159,7 @@ function App() {
             </div>
           </article>
         </section>
-      </div>
+      </div> 
     </>
   );
 }
