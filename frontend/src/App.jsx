@@ -7,9 +7,23 @@ import "./App.css";
 import { FaFireAlt } from "react-icons/fa";
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { AiFillPushpin } from "react-icons/ai";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useNavigate } from "react-router-dom";
 import Topview from "./topview";
+//import red from "/server.js";
+
+//const navigate = useNavigate();
+
+// const navigateLogin = () => {
+//   // 👇️ navigate to /
+//   navigate("/login");
+// };
 function App() {
+  //   const navigate = useNavigate();
+
+  //   const navigateLogin = () => {
+  //     // 👇️ navigate to /
+  //     navigate("/login");
+  //   };
   return (
     <>
       <h1>ProjeX</h1>
@@ -147,9 +161,19 @@ function App() {
           </article>
         </section>
       </div>
-      <buttton className="button">Login</buttton>
+      <buttton
+        className="button"
+        onClick={(event) => (window.location.href = "/login")}
+      >
+        Login
+      </buttton>
       <br />
-      <button className="button">Register</button>
+      <button
+        className="button"
+        onClick={(event) => (window.location.href = "/register")}
+      >
+        Register
+      </button>
     </>
   );
 }

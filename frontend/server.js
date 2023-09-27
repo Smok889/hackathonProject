@@ -72,5 +72,10 @@ app.post("/register", async (req, res) => {
   //function func() {
   //document.querySelector(".like").innerHTML = <FcLikePlaceholder />;
   //}
+  function red() {
+    res.redirect("/login");
+  };
 
-  ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
+ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
+
+//module.exports = red;

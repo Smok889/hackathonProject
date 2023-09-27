@@ -255,7 +255,8 @@ h2 {
   padding-bottom: 1rem;
 }
 .button {
-  background-color: #4caf50; /* Green */
+  background-color: #0f2c59;
+
   border: none;
   color: white;
   padding: 15px 32px;
@@ -265,4 +266,5 @@ h2 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 11px;
 }
