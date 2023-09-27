@@ -146,6 +146,9 @@ function App() {
           </article>
         </section>
       </div>
+      <buttton className="button">Login</buttton>
+      <br />
+      <button className="button">Register</button>
     </>
   );
 }

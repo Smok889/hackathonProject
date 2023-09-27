@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { FaFireAlt } from "react-icons/fa";
-import { FcLike } from "react-icons/fc";
+import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { AiFillPushpin } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
 import App from "./App";
