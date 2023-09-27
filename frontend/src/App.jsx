@@ -6,23 +6,24 @@ import "./App.css";
 import { FaFireAlt } from "react-icons/fa";
 import { FcLike } from "react-icons/fc";
 import { AiFillPushpin } from "react-icons/ai";
+import { Outlet, Link } from "react-router-dom";
+import Topview from "./topview";
 function App() {
   return (
     <>
-      //layout
       <h1>ProjeX</h1>
       <div class="topnav">
-        <a class="active" href="#home">
+        <Link to={`/`} class="active" href="#home">
           Home
-        </a>
-        <a href="#about">
+        </Link>
+        <Link to={`top/`}>
           <FaFireAlt />
           &nbsp;Top viewed
-        </a>
-        <a href="#contact">
+        </Link>
+        <Link to={`love/`}>
           <FcLike />
           &nbsp;Top liked
-        </a>
+        </Link>
         <div class="search-container">
           <form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search" />
@@ -109,12 +110,12 @@ function App() {
                 <img src="img3.jpg" alt="" />
               </figure>
               <div class="article-body">
-                <h2>Project 3</h2>
+                <h2>Environmental Sustainability Dashboard:</h2>
                 <p>
-                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
-                  euismod sed lacus sit amet, congue bibendum eros. Etiam mattis
-                  lobortis porta. Vestibulum ultrices iaculis enim imperdiet
-                  egestas.
+                  Develop a web-based dashboard that compiles and visualizes
+                  data on various environmental factors, helping organizations
+                  and individuals make informed decisions to reduce their
+                  ecological footprint.
                 </p>
                 <a href="#" class="read-more">
                   Read more{" "}
