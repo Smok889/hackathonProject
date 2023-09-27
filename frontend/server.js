@@ -31,9 +31,9 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get("/", (req, res) => {
-  res.render("index.ejs", { name: "test" });
-});
+//app.get("/", (req, res) => {
+// res.render("index.ejs", { name: "test" });
+//});
 
 app.get("/login", (req, res) => {
   res.render("login.ejs");
@@ -74,5 +74,3 @@ app.post("/register", async (req, res) => {
   //}
 
   ViteExpress.listen(app, 3000, () => console.log("Server is listening..."));
-
-app.listen(3000);
