@@ -5,47 +5,27 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { FaFireAlt } from "react-icons/fa";
-import { FcLike } from "react-icons/fc";
+import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { AiFillPushpin } from "react-icons/ai";
+import { Outlet, Link } from "react-router-dom";
+import Topview from "./topview";
 function App() {
-
-  const [backendData, setBackendData] = useState([{}])
-
-  useEffect(() => {
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {
-        setBackendData(data)
-      }
-    )
-  }, [])
   
   return (
     <>
-    <div>
-      {(typeof backendData.users === 'undefined')? (
-        <p>Loading...</p>
-      ): (
-        backendData.users.map((user,i) => (
-          <p key={i}>{user} </p>
-        ))
-      )}
-    </div>
-      //layout
       <h1>ProjeX</h1>
       <div class="topnav">
-        <a class="active" href="#home">
+        <Link to={`/`} class="active" href="#home">
           Home
-        </a>
-        <a href="#about">
+        </Link>
+        <Link to={`top/`}>
           <FaFireAlt />
           &nbsp;Top viewed
-        </a>
-        <a href="#contact">
+        </Link>
+        <Link to={`love/`}>
           <FcLike />
           &nbsp;Top liked
-        </a>
+        </Link>
         <div class="search-container">
           <form action="/action_page.php">
             <input type="text" placeholder="Search.." name="search" />
@@ -76,8 +56,11 @@ function App() {
                   various aspects of their home, such as lighting, temperature,
                   security, and appliances, through a centralized mobile app.
                 </p>
-                <a href="#" class="read-more">
+                <a href="smart.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,8 +90,11 @@ function App() {
                   showcase their work in immersive 3D galleries, providing
                   viewers with a unique and interactive art experience.
                 </p>
-                <a href="#" class="read-more">
+                <a href="virtual.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -132,15 +118,17 @@ function App() {
                 <img src="img3.jpg" alt="" />
               </figure>
               <div class="article-body">
-                <h2>Project 3</h2>
+                <h2>Solar-Powered Mobile Charging Stations</h2>
                 <p>
-                  Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
-                  euismod sed lacus sit amet, congue bibendum eros. Etiam mattis
-                  lobortis porta. Vestibulum ultrices iaculis enim imperdiet
-                  egestas.
+                  Develop portable, solar-powered charging stations that can be
+                  deployed in public spaces, allowing people to charge their
+                  devices sustainably while on the go.
                 </p>
-                <a href="#" class="read-more">
+                <a href="solar.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
