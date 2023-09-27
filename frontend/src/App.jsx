@@ -4,7 +4,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { FaFireAlt } from "react-icons/fa";
-import { FcLike } from "react-icons/fc";
+import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { AiFillPushpin } from "react-icons/ai";
 import { Outlet, Link } from "react-router-dom";
 import Topview from "./topview";
@@ -54,8 +54,11 @@ function App() {
                   various aspects of their home, such as lighting, temperature,
                   security, and appliances, through a centralized mobile app.
                 </p>
-                <a href="#" class="read-more">
+                <a href="smart.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -85,8 +88,11 @@ function App() {
                   showcase their work in immersive 3D galleries, providing
                   viewers with a unique and interactive art experience.
                 </p>
-                <a href="#" class="read-more">
+                <a href="virtual.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -110,15 +116,17 @@ function App() {
                 <img src="img3.jpg" alt="" />
               </figure>
               <div class="article-body">
-                <h2>Environmental Sustainability Dashboard:</h2>
+                <h2>Solar-Powered Mobile Charging Stations</h2>
                 <p>
-                  Develop a web-based dashboard that compiles and visualizes
-                  data on various environmental factors, helping organizations
-                  and individuals make informed decisions to reduce their
-                  ecological footprint.
+                  Develop portable, solar-powered charging stations that can be
+                  deployed in public spaces, allowing people to charge their
+                  devices sustainably while on the go.
                 </p>
-                <a href="#" class="read-more">
+                <a href="solar.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

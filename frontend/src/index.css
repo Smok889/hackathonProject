@@ -247,3 +247,10 @@ h2 {
 .pin {
   font-family: "Sofia Sans Condensed", sans-serif;
 }
+.like {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}

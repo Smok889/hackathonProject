@@ -45,8 +45,11 @@ function Love() {
                   various aspects of their home, such as lighting, temperature,
                   security, and appliances, through a centralized mobile app.
                 </p>
-                <a href="#" class="read-more">
+                <a href="smart.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +79,11 @@ function Love() {
                   showcase their work in immersive 3D galleries, providing
                   viewers with a unique and interactive art experience.
                 </p>
-                <a href="#" class="read-more">
+                <a href="virtual.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +114,11 @@ function Love() {
                   and individuals make informed decisions to reduce their
                   ecological footprint.
                 </p>
-                <a href="#" class="read-more">
+                <a href="p5.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -144,8 +153,11 @@ function Love() {
                   teaching young children essential skills like math, language,
                   and problem-solving in a fun and interactive way.
                 </p>
-                <a href="#" class="read-more">
+                <a href="p3.docx" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -175,8 +187,11 @@ function Love() {
                   customize workout plans and provide real-time feedback based
                   on users' fitness levels and goals.
                 </p>
-                <a href="#" class="read-more">
+                <a href="p1.pdf" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -208,6 +223,9 @@ function Love() {
                 </p>
                 <a href="#" class="read-more">
                   Read more{" "}
+                  <span className="like">
+                    <FcLikePlaceholder />
+                  </span>
                   <span class="sr-only">about this is some title</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
